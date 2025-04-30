@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "pocket-flow"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pocketflow" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pocketflow", specifier = ">=0.0.2" }]
+
+[[package]]
+name = "pocketflow"
+version = "0.0.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/56/7f/61e567a2dc1d6a8e9999e6b14d593247bc902dc8b0797e0c5ee9b531f50c/pocketflow-0.0.2.tar.gz", hash = "sha256:9249f05223f1b325a99fa4445d5ab69c89afa1e0e4acecdc1e6109936529e1b7", size = 17897 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/97/a0/3898b9821e571d59aa248c841ed6b5a0197ea813fc0c09623c780d93eee6/pocketflow-0.0.2-py3-none-any.whl", hash = "sha256:16f9cc5cfd68b6e552c736e5b965209b1f464233c62061a2dc3080cb48a22e74", size = 3340 },
+]
